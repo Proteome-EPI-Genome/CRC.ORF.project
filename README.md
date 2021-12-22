@@ -17,15 +17,25 @@ Will be ready soon
 
 `
 STEP 1: Trim for adaptor sequence and mask for low-complexity and low-quality sequence
+
 STEP 2: Map to the human genome (GRCh38) and GENCODE V22 transcriptome
+
 STAR v.2.6.1b with the parameters: “--outSAMunmapped Within --outFilterType BySJout --twopassMode Basic --outSAMtype BAM SortedByCoordinate”.
+
 STEP 3: Expression Read Count
+
 The gene-level raw read-counts were calculated using htseq-count function of HTSeq (0.11.0), based on the aligned and sorted bam files.
+
 STEP 4: Normalization & Differential Expression Analysis
+
 The normalization of read counts and differential gene expression analysis were performed, using DESeq2(1.22.2). The filters of
+
     basemean >= 1,
+    
     |log2Fold-Change| >= log2(1.5)
+    
     FDR <= 0.05
+    
 were used to define differentially expressed genes for downstream analysis.
 `
 
