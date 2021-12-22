@@ -30,7 +30,7 @@ STEP 4: Normalization & Differential Expression Analysis
 The normalization of read counts and differential gene expression analysis were performed, using DESeq2(1.22.2). The filters of
 
 `
-    basemean >= 1,
+    basemean >= 1
     
     |log2Fold-Change| >= log2(1.5)
     
