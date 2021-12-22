@@ -28,6 +28,7 @@ The gene-level raw read-counts were calculated using htseq-count function of HTS
 STEP 4: Normalization & Differential Expression Analysis
 
 The normalization of read counts and differential gene expression analysis were performed, using DESeq2(1.22.2). The filters of
+
 `
     basemean >= 1,
     
@@ -35,6 +36,7 @@ The normalization of read counts and differential gene expression analysis were 
     
     FDR <= 0.05
  `   
+
 were used to define differentially expressed genes for downstream analysis.
 
 
