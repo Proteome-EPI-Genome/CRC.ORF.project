@@ -1,8 +1,5 @@
 # CRC.ORF.project
 
-Processing ...
-
-Will be ready soon
 
 ### 1. Ribo-seq Data Processing
 
